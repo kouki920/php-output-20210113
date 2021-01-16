@@ -37,7 +37,7 @@ function validate($review){
     }
 
     $fileName = $_FILES['image']['name'];
-    //input type="file" name="image"でアップロードされたファイル名を変数に代入
+    //input type="file"でアップロードされたファイル名を変数に代入
     if(!empty($fileName)){
         $ext = substr($fileName,-3);
     if($ext !='jpg' && $ext != 'gif' && $ext !='png'){
